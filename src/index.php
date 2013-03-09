@@ -1,23 +1,25 @@
 <?php include("top.html"); ?>
 
-<!-- CSE 190 M, Homework 4 (NerdLuv)
-     This provided file is the front page that links to two of the files you are going
-     to write, signup.php and matches.php.  You don't need to modify this file. -->
+<!-- Peer Review U
+     BetaByte webDev Team: Anthony C. Hopkins, Sohaib Hussain, Paul Park Kwon, John Paul Wallway
+     CSE 360
+--> 
+     
 <div>
 	<h1>Welcome!</h1>
 
 	<ul>
 		<li>
 			<a href="signup.php">
-				<img src="http://www.cs.washington.edu/education/courses/cse190m/12sp/homework/4/signup.gif" alt="icon" />
+        <img src="http://www.peerreviewu.com/
 				Sign up for a new account
 			</a>
 		</li>
 		
 		<li>
-			<a href="matches.php">
+			<a href="login.php">
 				<img src="http://www.cs.washington.edu/education/courses/cse190m/12sp/homework/4/heartbig.gif" alt="icon" />
-				Check your matches
+				Login now
 			</a>
 		</li>
 	</ul>
