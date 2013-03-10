@@ -1,0 +1,21 @@
+
+
+Hey Kelvin,
+
+I'm not trying to be pedantic or blunt, just short on time and trying giving my thoughts about the db table organization and what we would like to see. All in all it looks close.
+
+A few notes:
+* Database names, table names, and  column names should not contain spaces. People use camelCasing or under_bars generally to separate words.
+* What is the database name?
+* The courses table should have a 'Schedule Line Number' or 'Section' column, for when there is more than one time slot offering for a particular course
+* The enrollment table should have 'year' and 'quarter' columns
+* The 'question information' table seems like it should be 'peer_ratings' and it should include a 'rating' column and a 'comment' column (the '/answer' part of the 'questions' table can be removed.
+* The questions table should only hold information about questions and should contain a 'rating_scale' column 
+* There should be a table for keeping track of teams' and groups' members and the team/group names. e.g.
+| team_or_group_name | user_id |
+| iOSByte                       | 123456 |
+| Overbyte                     | 123456 |
+* The ratings questions table can be combined with the question information table (the uniqueness of   rows in the 'question information'--or peer_ratings--table can be determined by the question_id, giver_id, and receiver_id)
+
+Thanks,
+John Paul
