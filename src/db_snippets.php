@@ -4,16 +4,28 @@
   CSE 360
 ------>
 
-### PHP stuff stolen from w3schools ###
-mysqli_connect(host,username,password,dbname);
+// Database snippets for general use
 
 <?php
+
 // Create connection
-$con=mysqli_connect("example.com","peter","abc123","my_db");
+$con=mysqli_connect("peerreviewu.com","app_user","escrowed_pass","uwb_db");
 
 // Check connection
 if (mysqli_connect_errno($con))
   {
   echo "Failed to connect to MySQL: " . mysqli_connect_error();
   }
+
+// Get student's courses
+$student_courses = mysqli_query($con,"SELECT course_id FROM enrollment where student_id = 12345");
+
+// Get instructor's courses
+$instructor_courses = mysqli_query($con,"SELECT course_id FROM courseswhere instructor_id = 67890");
+
+$user_pass = getPassword()
+// get id_number
+$id_number = mysqli_query($con,"SELECT id_number from login_information where password = '$user_pass'");
+
+
 ?>
