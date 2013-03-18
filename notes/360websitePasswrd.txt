@@ -1,0 +1,32 @@
+360 
+HTML password code
+
+<script type="text/javascript">
+(function() {
+var pass = "password",
+reply = prompt("Please enter your password:");
+
+if(typeof reply !== "string")
+{
+// The user didn't enter a password,
+// Don't loop this script if they didn't
+// or they will never be able to exit.
+//
+// Redirect them to a fail page or something.
+
+window.location.href = "http://example.com/password/fail.htm";
+}
+else if(reply !== pass)
+{
+alert("Password incorrect!");
+return arguments.callee();
+}
+
+window.location.href = "http://example.com/page/to/redirect/to.…
+})();
+</script>
+
+
+http://answers.yahoo.com/question/index?qid=20120114081449AAUh4FN
+
+____________________________________________________________

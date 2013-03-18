@@ -1,0 +1,13 @@
+1.01- is based on status reports, take responsibility for what we are able to provide aswell as progress.
+1.02- meetings held with him
+1.03- acceptance testing, requirement testing, survey questions, etc...
+1.04- not related
+1.05- not related
+1.06- dont lie when giving status reports
+1.07- requirment elicitation
+1.08- 
+2.01-
+2.02
+
+4.01- A human value we would support is privacy, limiting other peoples access to certain pages.
+4.02- We only verify reports based on what is within the scope of our jobs.
